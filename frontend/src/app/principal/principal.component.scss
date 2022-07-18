@@ -1,0 +1,20 @@
+.contenido{
+  position: absolute;
+  width: 1250px;
+  height: 872px;
+  left: 422px;
+  top: 195px;
+  overflow-y: scroll;
+
+  background: #FFFFFF;
+
+  box-shadow: 10px 10px 0px #C09500;
+  border-radius: 12px;
+
+  @apply py-44;
+}
+
+/*https://ed.team/blog/personaliza-el-scroll-de-tu-web-solo-con-css*/
+.contenido::-webkit-scrollbar {
+    display: none;
+}

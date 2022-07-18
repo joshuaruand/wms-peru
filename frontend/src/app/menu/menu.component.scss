@@ -1,0 +1,162 @@
+.barra-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 37px 24px 27px;
+    gap: 14px;
+
+    position: absolute;
+    width: 325px;
+    height: 1016px;
+    left: 55px;
+    top: 51px;
+
+    background: #FFFFFF;
+    box-shadow: 10px 10px 0px #C09500;
+    border-radius: 12px;
+  }
+
+  .titulo-menu{
+    width: 257px;
+    height: 22px;
+
+    font-family: 'Kosugi Maru';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.14em;
+
+    color: #A88403;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    @apply cursor-default;
+  }
+
+  .contenedor-regresar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 27px 10px 0px;
+    gap: 10px;
+
+    width: 277px;
+    height: 42px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .boton-regresar{
+    width: 257px;
+    height: 15px;
+
+    font-family: 'Kosugi Maru';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.14em;
+
+    color: #A88403;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    @apply hover:underline hover:text-yellow-900;
+  }
+
+  .contenedor-titulo-barra{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 27px 10px 20px;
+    gap: 10px;
+
+    width: 277px;
+    height: 62px;
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  }
+
+  .titulo-barra{
+    width: 257px;
+    height: 15px;
+
+    font-family: 'Kosugi Maru';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.14em;
+    text-decoration-line: underline;
+
+    color: #A88403;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    @apply cursor-default px-5;
+  }
+
+  .boton-menu-activado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 11px;
+    gap: 10px;
+
+
+    height: 34px;
+
+    background: white;
+    border-radius: 8px;
+
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+  }
+
+  .texto-boton-activado{
+    width: 235px;
+    height: 12px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.145em;
+
+    color: #000000;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+
+

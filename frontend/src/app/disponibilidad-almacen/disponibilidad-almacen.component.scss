@@ -1,0 +1,473 @@
+.caja-disponiblidad{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px 20px;
+  gap: 10px;
+
+  position: absolute;
+  width: 1175px;
+  height: 791px;
+  left: 37px;
+  top: 40px;
+
+  background: #FFF5D0;
+  border-radius: 12px;
+}
+
+.titulo-almacen{
+  height: 75px;
+
+  font-family: 'Kosugi Maru';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.14em;
+
+  color: #7B6001;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.datos-almacen{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+
+  width: 1135px;
+  height: 95px;
+
+  background: #FBEBB5;
+  border-radius: 12px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.dato-almacen{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  gap: 5px;
+
+
+  height: 62px;
+
+  border-radius: 12px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.primer-dato{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 1px 20px;
+
+  height: 32px;
+
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 13px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  p{
+    height: 30px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.14em;
+
+    color: #000000;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+}
+
+.separador{
+  width: 8px;
+  height: 30px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.14em;
+
+  color: #000000;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.segundo-dato{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 1px 20px;
+
+  height: 32px;
+
+  background: #FFFFFF;
+  box-shadow: inset 0px 0px 9px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+
+  p{
+    height: 30px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.14em;
+
+    color: #000000;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+}
+
+.dibujo{
+  width: 1135px;
+  height: 566px;
+
+  background: #FBEBB5;
+  border-radius: 12px;
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+
+  position: relative;
+}
+
+.pasillo1{
+  position: absolute;
+  width: 210px;
+  height: 37px;
+  left: 214px;
+  top: 265px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.14em;
+
+  color: #000000;
+
+}
+
+.pasillo2{
+  position: absolute;
+  width: 210px;
+  height: 37px;
+  left: 712px;
+  top: 265px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.14em;
+
+  color: #000000;
+}
+
+.estante1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 10px;
+
+  position: absolute;
+  width: 430px;
+  height: 227px;
+  left: 104px;
+  top: 25px;
+
+  background: #9ED5F3;
+  border-radius: 6px;
+}
+
+.dato-estante1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+
+  height: 109px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.titulo-estante1{
+  font-family: 'Kosugi Maru';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.14em;
+
+  color: #000000;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.subtitulo-estante1{
+
+  font-family: 'Kosugi Maru';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 25px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.14em;
+
+  color: #FFFFFF;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.tallas-estante1{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px 17.1429px;
+  gap: 17.14px;
+
+  height: 24px;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.talla-estante1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2.18182px;
+
+  width: 24px;
+  height: 24px;
+
+  background: #56A5D0;
+  border-radius: 109.091px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  p{
+    height: 19.64px;
+
+    font-family: 'Kosugi Maru';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10.9091px;
+    line-height: 11px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.14em;
+
+    color: #FFFFFF;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+}
+
+.lupita{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+
+  width: 28px;
+  height: 28px;
+
+  background: #FFFFFF;
+  border-radius: 100px;
+
+  flex: none;
+  order: 5;
+  flex-grow: 0;
+}
+
+.estado-estante1{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 10px;
+
+  width: 158.52px;
+  height: 48px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.valor-estante1{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 4px 34.2609px;
+  gap: 6.68px;
+
+  width: 100.52px;
+  height: 28px;
+
+  background: #FFFFFF;
+  border-radius: 66.8087px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  p{
+    width: 32px;
+    height: 20px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16.7022px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.14em;
+
+    color: #000000;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+}
+
+.estante2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 10px;
+
+  position: absolute;
+  width: 430px;
+  height: 227px;
+  left: 602px;
+  top: 25px;
+
+  background: #9ED5F3;
+  border-radius: 6px;
+}
+
+.estante3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 10px;
+
+  position: absolute;
+  width: 430px;
+  height: 227px;
+  left: 104px;
+  top: 315px;
+
+  background: #9ED5F3;
+  border-radius: 6px;
+}
+
+.estante4{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 10px;
+
+  position: absolute;
+  width: 430px;
+  height: 227px;
+  left: 602px;
+  top: 315px;
+
+  background: #9ED5F3;
+  border-radius: 6px;
+}

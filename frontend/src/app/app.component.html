@@ -1,0 +1,8 @@
+<router-outlet></router-outlet>
+
+<div class="fondo-principal">
+  <app-menu (valorMenu)="funcionCambiar($event)"></app-menu>
+  <app-navbar (valorInicio)="funcionCambiar($event)"></app-navbar>
+  <app-usuario></app-usuario>
+  <app-principal [valorComponente]="valor" (valorUbicar2)="funcionUbicarFinal($event)"></app-principal>
+</div>

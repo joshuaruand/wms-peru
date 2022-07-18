@@ -1,0 +1,461 @@
+.caja-disponiblidad{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px 20px;
+  gap: 10px;
+
+  position: absolute;
+  width: 1175px;
+  left: 37px;
+  top: 40px;
+
+  background: #FFF5D0;
+  border-radius: 12px;
+}
+
+.titulo-almacen{
+  height: 75px;
+
+  font-family: 'Kosugi Maru';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.14em;
+
+  color: #7B6001;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.datos-almacen{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+
+  width: 1135px;
+  height: 95px;
+
+  background: #FBEBB5;
+  border-radius: 12px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.dato-almacen{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 20px;
+  gap: 5px;
+
+
+  height: 62px;
+
+  border-radius: 12px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.primer-dato{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 1px 20px;
+
+  height: 32px;
+
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 13px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  p{
+    height: 30px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.14em;
+
+    color: #000000;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+}
+
+.separador{
+  width: 8px;
+  height: 30px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.14em;
+
+  color: #000000;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.segundo-dato{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 1px 20px;
+
+  height: 32px;
+
+  background: #FFFFFF;
+  box-shadow: inset 0px 0px 9px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+
+  p{
+    height: 30px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.14em;
+
+    color: #000000;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+}
+
+.dibujo{
+  width: 1135px;
+  height: 853px;
+
+  background: #FBEBB5;
+  border-radius: 12px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.fila-columna-izquierda{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+
+  position: absolute;
+  left: 0%;
+  right: 93.97%;
+  top: 7.79%;
+  bottom: 7.85%;
+
+  background: #FFFFFF;
+  border-radius: 5px 0px 0px 5px;
+  p{
+    width: 114px;
+    height: 10px;
+
+    font-family: 'Kosugi Maru';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 10px;
+
+    text-align: center;
+    letter-spacing: 0.14em;
+
+    color: #000000;
+
+    transform: rotate(-90deg);
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+}
+
+.espacio-cuadro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 27.9186px 7.97674px;
+
+  position: absolute;
+  left: 6.03%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+
+  background: #67CE7D;
+  border-radius: 5px;
+}
+
+.datos-espacio{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 7.97674px;
+  gap: 7.98px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.titulo-espacio{
+  font-family: 'Kosugi Maru';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15.9535px;
+  line-height: 16px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.14em;
+
+  color: #000000;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.subtitulo-espacio{
+  font-family: 'Kosugi Maru';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19.9419px;
+  line-height: 20px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.14em;
+
+  color: #FFFFFF;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.enlaces-espacio{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 7.97674px;
+  gap: 7.98px;
+
+  width: 157.33px;
+  height: 38.33px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.restita{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+
+  width: 22.38px;
+  height: 22.38px;
+
+  background: #FFFFFF;
+  border-radius: 79.2236px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.valor-espacio{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 3.1907px 27.329px;
+  gap: 5.33px;
+
+  width: 80.66px;
+  height: 22.38px;
+
+  background: #FFFFFF;
+  border-radius: 53.2916px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+  p{
+    width: 26px;
+    height: 16px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13.3229px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.14em;
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+}
+
+.sumita{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+
+  width: 22.38px;
+  height: 22.38px;
+
+  background: #FFFFFF;
+  border-radius: 79.2236px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.espacio7{
+  position: relative;
+  width: 365px;
+  height: 154.1px;
+  left: 151px;
+  top: 36px;
+}
+
+.espacio5{
+  position: relative;
+  width: 365px;
+  height: 154.1px;
+  left: 151px;
+  top: 72px;
+}
+
+.espacio3{
+  position: relative;
+  width: 365px;
+  height: 154.1px;
+  left: 151px;
+  top: 108px;
+}
+
+.espacio1{
+  position: relative;
+  width: 365px;
+  height: 154.1px;
+  left: 151px;
+  top: 144px;
+}
+
+.espacio8{
+  position: relative;
+  width: 365px;
+  height: 154.1px;
+  left: 619px;
+  top: -580px;
+}
+
+
+.espacio6{
+  position: relative;
+  width: 365px;
+  height: 154.1px;
+  left: 619px;
+  top: -546px;
+}
+
+
+.espacio4{
+  position: relative;
+  width: 365px;
+  height: 154.1px;
+  left: 619px;
+  top: -510px;
+}
+
+
+.espacio2{
+  position: relative;
+  width: 365px;
+  height: 154.1px;
+  left: 619px;
+  top: -474px;
+
+}

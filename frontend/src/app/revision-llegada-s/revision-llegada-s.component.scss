@@ -1,0 +1,186 @@
+.caja-ordenes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 22px;
+
+  position: absolute;
+  width: 1175px;
+  height: 820px;
+  left: 32px;
+  top: 28px;
+
+  background: #FFF5D0;
+  border-radius: 12px;
+}
+
+.titulo-orden{
+  width: 1135px;
+  height: 75px;
+
+  font-family: 'Kosugi Maru';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.14em;
+
+  color: #7B6001;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.fila-orden{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+
+  width: 1135px;
+  height: 95px;
+
+  background: #FFDE6A;
+  border-radius: 12px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.orden{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 0px;
+  margin-left: 2px;
+  margin-right: 2px;
+  gap: 5px;
+
+
+  height: 49px;
+
+  border-radius: 12px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.titulo-ordencita{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 1px 10px;
+
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 13px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  p{
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.14em;
+
+    color: #000000;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+}
+
+.separador{
+  width: 4px;
+  height: 17px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.14em;
+
+  color: #000000;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.valor-orden{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 1px 10px;
+
+  background: #FFFFFF;
+  box-shadow: inset 0px 0px 9px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+
+  p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 17px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.14em;
+
+    color: #000000;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+}
+
+.lupita{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+
+  width: 28px;
+  height: 28px;
+
+  background: #FFFFFF;
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+
+  flex: none;
+  order: 5;
+  flex-grow: 0;
+}
+
+.color-normal{
+  background: #FBEBB5;
+}

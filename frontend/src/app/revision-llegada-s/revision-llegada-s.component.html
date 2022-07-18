@@ -1,0 +1,68 @@
+<div class="caja-ordenes">
+
+  <button class="titulo-orden" (click)="funcionVolver()">ORDENES DE LLEGADA </button>
+
+  <div class="fila-orden">
+    <div class="orden">
+      <div class="titulo-ordencita"><p>COD. ORDEN</p></div>
+      <p class="separador">:</p>
+      <div class="valor-orden"><p>OR10</p></div>
+    </div>
+
+    <div class="orden">
+      <div class="titulo-ordencita"><p>COD. CITA</p></div>
+      <p class="separador">:</p>
+      <div class="valor-orden"><p>CR10</p></div>
+    </div>
+
+    <div class="orden">
+      <div class="titulo-ordencita"><p>RESPONSABLE</p></div>
+      <p class="separador">:</p>
+      <div class="valor-orden"><p>Rene Ramirez</p></div>
+    </div>
+
+
+    <div class="orden">
+      <div class="titulo-ordencita"><p>T. BIEN</p></div>
+      <p class="separador">:</p>
+      <div class="valor-orden"><p>PB</p></div>
+    </div>
+  </div>
+
+  <!---->
+
+  <div class="fila-orden color-normal" *ngFor="let item of lista">
+    <div class="orden">
+      <div class="titulo-ordencita"><p>COD. PAQUETE</p></div>
+      <p class="separador">:</p>
+      <div class="valor-orden"><p>{{item.codPaquete}}</p></div>
+    </div>
+
+    <div class="orden">
+      <div class="titulo-ordencita"><p>T. BIEN</p></div>
+      <p class="separador">:</p>
+      <div class="valor-orden"><p>POLO</p></div>
+    </div>
+
+    <div class="orden">
+      <div class="titulo-ordencita"><p>COLOR</p></div>
+      <p class="separador">:</p>
+      <div class="valor-orden"><p>{{item.colorBien}}</p></div>
+    </div>
+
+
+    <div class="orden">
+      <div class="titulo-ordencita"><p>TALLA</p></div>
+      <p class="separador">:</p>
+      <div class="valor-orden"><p>{{item.tipoTalla}}</p></div>
+    </div>
+
+    <div class="orden">
+      <div class="titulo-ordencita"><p># UNIDADES</p></div>
+      <p class="separador">:</p>
+      <div class="valor-orden"><p>{{item.unidades}}</p></div>
+    </div>
+  </div>
+
+
+</div>

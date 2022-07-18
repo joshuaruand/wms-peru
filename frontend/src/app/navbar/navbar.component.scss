@@ -1,0 +1,83 @@
+.barra-navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 40px;
+    gap: 511px;
+    isolation: isolate;
+
+    position: absolute;
+    width: 930px;
+    height: 98px;
+    left: 422px;
+    top: 51px;
+
+    background: #FFFFFF;
+    box-shadow: 10px 10px 0px #C09500;
+    border-radius: 12px;
+  }
+
+  .contenedor-logo{
+    width: 267px;
+    height: 50px;
+
+    background: #FFFFFF;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: 1;
+  }
+
+  .texto-logo{
+    width: 267px;
+    height: 50px;
+    left: 0px;
+    top: 0px;
+
+    font-family: 'Jua';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.145em;
+
+    color: #A88403;
+
+    @apply cursor-default;
+  }
+
+  .boton-inicio{
+    width: 93px;
+    height: 25px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    z-index: 0;
+  }
+
+  .texto-inicio{
+    left: -8.6%;
+    right: 8.6%;
+    top: 0%;
+    bottom: 0%;
+
+    font-family: 'Kosugi Maru';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 25px;
+
+    display: flex;
+    align-items: center;
+    text-align: right;
+
+    color: #a0a0a0;
+
+    @apply hover:underline hover:text-yellow-900;
+  }
