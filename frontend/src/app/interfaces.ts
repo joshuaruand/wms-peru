@@ -19,7 +19,7 @@ export interface CabeceraBienesLugarDto {
   idEstante:number;
   idEspacio:number;
   colorEstante:string;
-  TallaEspacio:string;
+  tallaEspacio:string;
 }
 
 export interface CodigoCitaDto {
@@ -28,7 +28,7 @@ export interface CodigoCitaDto {
 
 export interface RptaCodigoCita
 {
-  lista: CodigoCitaDto[];
+  codigosRecepcion: CodigoCitaDto[];
 }
 
 export interface CitaDto
@@ -51,7 +51,7 @@ export interface EstanteDto
 }
 
 export interface RptaEspacios {
-  lista: EspaciosDto[];
+  grillaEspacios: EspaciosDto[];
 }
 
 export interface RptaEstante {
@@ -112,7 +112,7 @@ export interface PaquetesDto {
 }
 
 export interface RptaPaquetesUbicados {
-  lista:PaquetesDto[];
+  paquetesUbicados:PaquetesDto[];
 }
 
 export interface UbicarPaqueteDto {
@@ -138,4 +138,26 @@ export interface UsuarioDto {
   idTipoUsuario:number;
   contrasenaUsuario:string;
   idAlmacen:number;
+}
+
+export class DatosPaquete {
+  idPaquete:number;
+  tipoBien:string;
+  tallaBien:string;
+  colorBien:string;
+  lugarPaquete:number;
+  espacioPaquete:number;
+  estantePaquete:number;
+
+  constructor (idPaquete, tipoBien, tallaBien, colorBien, lugarPaquete, espacioPaquete, estantePaquete) {
+    this.idPaquete = idPaquete;
+    this.tipoBien = tipoBien;
+    this.tallaBien = tallaBien;
+    this.colorBien = colorBien;
+    this.lugarPaquete = lugarPaquete;
+    this.espacioPaquete = espacioPaquete;
+    this.estantePaquete = estantePaquete;
+  }
+
+
 }

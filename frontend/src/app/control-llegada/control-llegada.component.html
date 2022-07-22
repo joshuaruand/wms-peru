@@ -4,14 +4,16 @@
       <div class="conjunto-control">
         <div class="cuadro-texto">
           <p class="titulo-cuadro">CÓDIGO DE CITA</p>
-          <input type="text" name="" id="" class="input-verificar" placeholder="CR1">
+          <select name="select" class="input-verificar" [(ngModel)]="codCita">
+            <option value={{item.idCita}} *ngFor="let item of codigos">CR{{item.idCita}}</option>
+          </select>
         </div>
-        <button class="boton-verificar">
+        <button class="boton-verificar" (click)="verificar()">
           <p class="texto-boton-verificar">Verificar</p>
         </button>
         <div class="cuadro-texto2">
           <p class="titulo-cuadro2">CÓDIGO DE ORDEN</p>
-          <input type="text" disabled name="" id="" class="input-verificar2" placeholder="Esperando código de cita">
+          <input type="text" disabled name="" id="" class="input-verificar2" placeholder={{mensajeOrden}}>
         </div>
       </div>
     </div>
@@ -23,44 +25,24 @@
       <div class="cuadro-fecha-programada">
         <p class="titulo-fecha-programada">FECHA Y HORA DE LLEGADA PROGRAMADA</p>
           <div class="caja-programacion">
-            <input type="text" class="input-fecha-p">
-            <input type="text" class="input-hora-p">
-          </div>
-      </div>
-      <div class="cuadro-fecha-real">
-        <p class="titulo-fecha-real">FECHA Y HORA DE LLEGADA REAL</p>
-          <div class="caja-real">
-            <input type="text" class="input-fecha-r">
-            <input type="text" class="input-hora-r">
+            <input type="text" class="input-fecha-p text-center" disabled placeholder={{fechaBase}}>
+            <input type="text" class="input-hora-p text-center" disabled placeholder={{horaBase}}>
+            <button class="py-1 hover:font-bold" (click)="traerTiempo()">o</button>
           </div>
       </div>
     </div>
     <div class="contenido-identidades">
       <div class="caja-transportista">
-        <p class="titulo-transportista">IDENTIDAD DEL TRANSPORTISTA</p>
+        <p class="titulo-transportista">IDENTIDAD DEL TRANSPORTISTA<button class="py-1 hover:font-bold" (click)="verificarTransportista()"></button></p>
         <div class="fila-dni-transportista">
-          <div class="check"><p>X</p></div>
-          <div class="cuadro-dni"><p>DNI</p></div>
-          <input type="text" class="input-dni" placeholder="Ingrese el dato">
+          <button class="check" (click)="click1()"><p>{{equis1}}</p></button>
+          <div class="cuadro-dni {{verificadorDirecto1}}"><p>DNI</p></div>
+          <input *ngIf="!estado" type="text" class="input-dni" placeholder="{{dniBase}}" [(ngModel)] = "dniReal" disabled>
         </div>
         <div class="fila-dni-transportista">
-          <div class="check"><p>X</p></div>
-          <div class="cuadro-dni"><p>NOMBRES</p></div>
-          <input type="text" class="input-dni" placeholder="Ingrese el dato">
-        </div>
-      </div>
-
-      <div class="caja-transportista">
-        <p class="titulo-transportista">RESPONSABLE DE RECEPCION</p>
-        <div class="fila-dni-transportista">
-          <div class="check"><p>X</p></div>
-          <div class="cuadro-dni"><p>DNI</p></div>
-          <input type="text" class="input-dni" placeholder="Ingrese el dato">
-        </div>
-        <div class="fila-dni-transportista">
-          <div class="check"><p>X</p></div>
-          <div class="cuadro-dni"><p>NOMBRES</p></div>
-          <input type="text" class="input-dni" placeholder="Ingrese el dato">
+          <button class="check" (click)="click2()"><p>{{equis2}}</p></button>
+          <div class="cuadro-dni {{verificadorDirecto2}}"><p>NOMBRES</p></div>
+          <input *ngIf="!estado2" type="text" class="input-dni" placeholder="{{nombresBase}}" [(ngModel)] = "nombresReal" disabled="">
         </div>
       </div>
     </div>

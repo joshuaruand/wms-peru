@@ -10,6 +10,8 @@ import { AlmacenDto, EstanteDto } from '../interfaces';
 })
 export class DisponibilidadAlmacenComponent implements OnInit {
 
+  @Output() valorSeleccionadoEstante = new EventEmitter<number>();
+
   ubicacionAlmacen:string = "F";
   tipoAlmacen:string = "F";
 
@@ -45,7 +47,8 @@ export class DisponibilidadAlmacenComponent implements OnInit {
     })
   }
 
-  funcionRevisar(){
+  funcionRevisar(a:number){
     this.lupaValor.emit(true);
+    this.valorSeleccionadoEstante.emit(a);
   }
 }

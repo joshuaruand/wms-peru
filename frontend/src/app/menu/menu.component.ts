@@ -7,15 +7,18 @@ import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
+
   @Output() valorMenu = new EventEmitter<number>();
 
   valorInterno = 0;
 
   otrosValores:string = "boton-menu-activado hover:border-2 hover:border-neutral-800";
+
   colorBoton1:string = "#FFC700";
   colorBoton2:string = "#FFFFFF";
   colorBoton3:string = "#FFFFFF";
   colorBoton4:string = "#FFFFFF";
+  colorBoton5:string = "#FFFFFF";
 
   constructor() { }
 
@@ -32,6 +35,7 @@ export class MenuComponent implements OnInit {
       this.colorBoton2 = "#FFFFFF";
       this.colorBoton3= "#FFFFFF";
       this.colorBoton4 = "#FFFFFF";
+      this.colorBoton5 = "#FFFFFF";
       this.dandoValor(1);
       this.valorInterno = 1;
     }
@@ -40,6 +44,7 @@ export class MenuComponent implements OnInit {
       this.colorBoton1 = "#FFFFFF";
       this.colorBoton3= "#FFFFFF";
       this.colorBoton4 = "#FFFFFF";
+      this.colorBoton5 = "#FFFFFF";
       this.dandoValor(2);
       this.valorInterno = 2;
     }
@@ -48,16 +53,28 @@ export class MenuComponent implements OnInit {
       this.colorBoton2 = "#FFFFFF";
       this.colorBoton1= "#FFFFFF";
       this.colorBoton4 = "#FFFFFF";
+      this.colorBoton5 = "#FFFFFF";
       this.dandoValor(3);
       this.valorInterno = 3;
     }
-    else{
+    else if (a==4){
       this.colorBoton4 = "#FFC700";
       this.colorBoton2 = "#FFFFFF";
       this.colorBoton3= "#FFFFFF";
       this.colorBoton1 = "#FFFFFF";
+      this.colorBoton5 = "#FFFFFF";
       this.dandoValor(4);
       this.valorInterno = 4;
+    }
+
+    else{
+      this.colorBoton4 = "#FFFFFF";
+      this.colorBoton2 = "#FFFFFF";
+      this.colorBoton3= "#FFFFFF";
+      this.colorBoton1 = "#FFFFFF";
+      this.colorBoton5 = "#FFC700";
+      this.dandoValor(5);
+      this.valorInterno = 5;
     }
   }
 
@@ -66,5 +83,6 @@ export class MenuComponent implements OnInit {
     if(this.valorInterno == 2) this.click(1);
     if(this.valorInterno == 3) this.click(2);
     if(this.valorInterno == 4) this.click(3);
+    if(this.valorInterno == 5) this.click(5);
   }
 }

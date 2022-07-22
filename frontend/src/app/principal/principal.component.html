@@ -1,5 +1,10 @@
 <div class="contenido">
 
+  <div *ngIf="funcionComponente(5)">
+    <app-busqueda-bienes></app-busqueda-bienes>
+  </div>
+
+
   <div *ngIf="funcionComponente(1)">
     <app-control-llegada></app-control-llegada>
   </div>
@@ -16,17 +21,17 @@
 
   <div *ngIf="funcionComponente(3)">
     <div *ngIf="valorTrueFalse2">
-      <app-disponibilidad-almacen (lupaValor)="funcionCambiar2($event)"></app-disponibilidad-almacen>
+      <app-disponibilidad-almacen (lupaValor)="funcionCambiar2($event)" (valorSeleccionadoEstante)="funcionAparecer2($event)"></app-disponibilidad-almacen>
     </div>
 
     <div *ngIf="!valorTrueFalse2">
-      <app-disponibilidad-estante (tituloValor)="funcionCambiar2($event)" (valorUbicar)="funcionIrUbicar($event)"></app-disponibilidad-estante>
+      <app-disponibilidad-estante (tituloValor)="funcionCambiar2($event)" (valorUbicar)="funcionIrUbicar($event)" [valorFinality2]="valorRecibido2" (valorClickeado1)="funcionClickeador1($event)" (valorClickeado2)="funcionClickeador2($event)"></app-disponibilidad-estante>
     </div>
 
   </div>
 
   <div *ngIf="funcionComponente(4)">
-    <app-disponibilidad-espacio></app-disponibilidad-espacio>
+    <app-disponibilidad-espacio [valorEstanteLlegada] ="valorEstante" [valorEspacioLlegada] ="valorEspacio" ></app-disponibilidad-espacio>
   </div>
 
 </div>

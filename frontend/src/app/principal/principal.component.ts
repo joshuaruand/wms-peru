@@ -12,6 +12,10 @@ export class PrincipalComponent implements OnInit {
   @Output() valorUbicar2 = new EventEmitter<number>();
 
   valorRecibido = 0;
+  valorRecibido2 = 0;
+
+  valorEstante = 0;
+  valorEspacio = 0;
 
   valorTrueFalse = true;
   valorTrueFalse2 = true;
@@ -39,7 +43,20 @@ export class PrincipalComponent implements OnInit {
   }
 
   funcionAparecer(e:number) {
-    console.log(e);
+    console.log("Funcion aparecer " + e);
     this.valorRecibido = e;
+  }
+
+  funcionAparecer2(e:number) {
+    console.log("Funcion aparecer2 " + e);
+    this.valorRecibido2 = e;
+  }
+
+  funcionClickeador1(e:number){
+    this.valorEstante = e;
+  }
+
+  funcionClickeador2(e:number){
+    this.valorEspacio = e;
   }
 }

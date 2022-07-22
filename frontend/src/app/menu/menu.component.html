@@ -1,27 +1,32 @@
 <div class="barra-menu">
-    <p class="titulo-menu">Menu</p>
+  <p class="titulo-menu">Menu</p>
 
-    <div class="contenedor-regresar">
-      <button class="boton-regresar" (click)="funcionRegresar()">Regresar</button>
-    </div>
-
-    <div class="contenedor-titulo-barra">
-      <p class="titulo-barra">FUNCIONALIDAD PRIMARIA</p>
-    </div>
-
-    <button class="{{otrosValores}} !bg-[{{colorBoton1}}]" (click)="click(1)">
-      <p class="texto-boton-activado">Control de llegada</p>
-    </button>
-
-    <button class="{{otrosValores}} !bg-[{{colorBoton2}}]" (click)="click(2)">
-      <p class="texto-boton-activado">Revision de O. de Llegada</p>
-    </button>
-
-    <button class="{{otrosValores}} !bg-[{{colorBoton3}}]" (click)="click(3)">
-      <p class="texto-boton-activado">Disponibilidad del Almacen</p>
-    </button>
-
-    <button class="{{otrosValores}} !bg-[{{colorBoton4}}]" (click)="click(4)">
-      <p class="texto-boton-activado">Ubicacion de Bienes</p>
-    </button>
+  <div class="contenedor-regresar">
+    <button class="boton-regresar" (click)="funcionRegresar()">Regresar</button>
   </div>
+
+  <div class="contenedor-titulo-barra">
+    <p class="titulo-barra">FUNCIONALIDAD PRIMARIA</p>
+  </div>
+
+
+  <button class="{{otrosValores}}" style="background: {{colorBoton1}} !important" (click)="click(1)">
+    <p class="texto-boton-activado">Control de llegada</p>
+  </button>
+  
+  <button class="{{otrosValores}}" style="background: {{colorBoton5}} !important" (click)="click(5)">
+    <p class="texto-boton-activado">Búsqueda de bienes</p>
+  </button>
+
+  <button class="{{otrosValores}}" style="background: {{colorBoton2}} !important" (click)="click(2)">
+    <p class="texto-boton-activado">Revision de O. de Llegada</p>
+  </button>
+
+  <button class="{{otrosValores}}" style="background: {{colorBoton3}} !important" (click)="click(3)">
+    <p class="texto-boton-activado">Disponibilidad del Almacen</p>
+  </button>
+
+  <button class="{{otrosValores}}" style="background: {{colorBoton4}} !important" (click)="click(4)">
+    <p class="texto-boton-activado">Ubicacion de Bienes</p>
+  </button>
+</div>

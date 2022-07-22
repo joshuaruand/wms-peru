@@ -1,6 +1,6 @@
 import { Component, EventEmitter, OnInit, Output, Input } from '@angular/core';
 import { ApiService } from '../ApiService';
-import { OrdenDto, OrdenesRecepcionDetallado } from '../interfaces';
+import { OrdenDto, OrdenesRecepcionDetallado, OrdenesRecepcionDto } from '../interfaces';
 
 @Component({
   selector: 'app-revision-llegada-s',
@@ -11,9 +11,11 @@ export class RevisionLlegadaSComponent implements OnInit {
 
   @Output() tituloValor = new EventEmitter<boolean>();
 
-  @Input() valorFinality;
+  @Input() valorFinality = 1;
 
   lista:OrdenesRecepcionDetallado[] = [];
+
+  orden:OrdenesRecepcionDto;
 
   constructor(private api:ApiService) { }
 
@@ -21,6 +23,11 @@ export class RevisionLlegadaSComponent implements OnInit {
     this.api.obtenerOrdenesRecepcionDetallado({"idOrden":this.valorFinality}).subscribe(respuesta =>{
       this.lista = respuesta.detalle;
       console.log(this.lista);
+    })
+
+    this.api.obtenerOrdenesRecepcion().subscribe(respuesta => {
+      this.orden = respuesta.lista[this.valorFinality - 1];
+      console.log(this.orden);
     })
   }
 

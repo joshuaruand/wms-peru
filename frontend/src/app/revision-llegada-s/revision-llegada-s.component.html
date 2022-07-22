@@ -6,13 +6,13 @@
     <div class="orden">
       <div class="titulo-ordencita"><p>COD. ORDEN</p></div>
       <p class="separador">:</p>
-      <div class="valor-orden"><p>OR10</p></div>
+      <div class="valor-orden"><p>OR{{orden?.idOrden}}</p></div>
     </div>
 
     <div class="orden">
       <div class="titulo-ordencita"><p>COD. CITA</p></div>
       <p class="separador">:</p>
-      <div class="valor-orden"><p>CR10</p></div>
+      <div class="valor-orden"><p>CR{{orden?.idCita}}</p></div>
     </div>
 
     <div class="orden">
@@ -25,7 +25,7 @@
     <div class="orden">
       <div class="titulo-ordencita"><p>T. BIEN</p></div>
       <p class="separador">:</p>
-      <div class="valor-orden"><p>PB</p></div>
+      <div class="valor-orden"><p>{{orden?.responsable}}</p></div>
     </div>
   </div>
 

@@ -1,0 +1,72 @@
+<div class="caja-disponiblidad">
+  <p class="titulo-almacen">BUSQUEDA DE BIENES (beta)</p>
+
+  <div class="datos-almacen">
+    <div class="dato-almacen">
+      <div class="primer-dato"><p>CÓDIGO PAQUETE</p></div>
+      <p class="sepadador">:</p>
+      <input class="segundo-dato" [(ngModel)]="codPaquete" type="number">
+    </div>
+    <button class="lupita" (click)="buscar()">
+      <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5746 6.59234C10.5746 8.92704 8.682 10.8197 6.3473 10.8197C4.01261 10.8197 2.11996 8.92704 2.11996 6.59234C2.11996 4.25765 4.01261 2.365 6.3473 2.365C8.682 2.365 10.5746 4.25765 10.5746 6.59234ZM9.31366 11.915C8.43583 12.4053 7.42419 12.6847 6.3473 12.6847C2.98259 12.6847 0.254959 9.95705 0.254959 6.59234C0.254959 3.22763 2.98259 0.5 6.3473 0.5C9.71201 0.5 12.4396 3.22763 12.4396 6.59234C12.4396 7.93376 12.0061 9.17392 11.2715 10.1804L13.3626 12.2714C13.8724 12.7812 13.8724 13.6078 13.3626 14.1176C12.8528 14.6275 12.0262 14.6275 11.5163 14.1176L9.31366 11.915Z" fill="black"/>
+      </svg>
+    </button>
+  </div>
+
+  <div class="dibujo">
+
+    <div class="lugar" *ngIf="!valor">
+      <p>NO SE ENCONTRARON RESULTADOS</p>
+    </div>
+
+    <div class="lugar" *ngIf="valor">
+      <p>RESULTADO: PAQUETE {{paqueteEncontrado?.idPaquete}}</p>
+      <div class="datos-lugar">
+
+        <div class="dato-lugar">
+          <div class="primer-dato-lugar"><p>TIPO</p></div>
+          <p class="separador-lugar">:</p>
+          <div class="segundo-dato-lugar"><p>{{paqueteEncontrado?.tipoBien}}</p></div>
+        </div>
+
+        <div class="dato-lugar">
+          <div class="primer-dato-lugar"><p>TALLA</p></div>
+          <p class="separador-lugar">:</p>
+          <div class="segundo-dato-lugar"><p>{{paqueteEncontrado?.tallaBien}}</p></div>
+        </div>
+
+        <div class="dato-lugar">
+          <div class="primer-dato-lugar"><p>COLOR</p></div>
+          <p class="separador-lugar">:</p>
+          <div class="segundo-dato-lugar"><p>{{paqueteEncontrado?.colorBien}}</p></div>
+        </div>
+
+        <div class="dato-lugar">
+          <div class="primer-dato-lugar"><p>ESTANTE</p></div>
+          <p class="separador-lugar">:</p>
+          <div class="segundo-dato-lugar"><p>{{paqueteEncontrado?.estantePaquete}}</p></div>
+        </div>
+
+        <div class="dato-lugar">
+          <div class="primer-dato-lugar"><p>ESPACIO</p></div>
+          <p class="separador-lugar">:</p>
+          <div class="segundo-dato-lugar"><p>{{paqueteEncontrado?.espacioPaquete}}</p></div>
+        </div>
+
+        <div class="dato-lugar">
+          <div class="primer-dato-lugar"><p>LUGAR</p></div>
+          <p class="separador-lugar">:</p>
+          <div class="segundo-dato-lugar"><p>{{paqueteEncontrado?.lugarPaquete}}</p></div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+  </div>
+</div>
+

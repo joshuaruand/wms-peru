@@ -24,16 +24,16 @@
         <p class="titulo-estante1">ESTANTE {{estante1?.idEstante}}</p>
         <p class="subtitulo-estante1">{{estante1?.tipoBien}}</p>
         <div class="tallas-estante1">
+          <div class="talla-estante1"><p>2</p></div>
           <div class="talla-estante1"><p>S</p></div>
           <div class="talla-estante1"><p>M</p></div>
           <div class="talla-estante1"><p>L</p></div>
-          <div class="talla-estante1"><p>XL</p></div>
         </div>
       </div>
 
       <div class="estado-estante1">
         <div class="valor-estante1"><p>{{estante1?.cantEspaciosLlenos}}/{{estante1?.cantEspaciosTotal}}</p></div>
-        <button class="lupita" (click)="funcionRevisar()">
+        <button class="lupita" (click)="funcionRevisar(estante1?.idEstante)">
           <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5746 6.59234C10.5746 8.92704 8.682 10.8197 6.3473 10.8197C4.01261 10.8197 2.11996 8.92704 2.11996 6.59234C2.11996 4.25765 4.01261 2.365 6.3473 2.365C8.682 2.365 10.5746 4.25765 10.5746 6.59234ZM9.31366 11.915C8.43583 12.4053 7.42419 12.6847 6.3473 12.6847C2.98259 12.6847 0.254959 9.95705 0.254959 6.59234C0.254959 3.22763 2.98259 0.5 6.3473 0.5C9.71201 0.5 12.4396 3.22763 12.4396 6.59234C12.4396 7.93376 12.0061 9.17392 11.2715 10.1804L13.3626 12.2714C13.8724 12.7812 13.8724 13.6078 13.3626 14.1176C12.8528 14.6275 12.0262 14.6275 11.5163 14.1176L9.31366 11.915Z" fill="black"/>
           </svg>
@@ -47,16 +47,16 @@
         <p class="titulo-estante1">ESTANTE {{estante3?.idEstante}}</p>
         <p class="subtitulo-estante1">{{estante3?.tipoBien}}</p>
         <div class="tallas-estante1">
+          <div class="talla-estante1"><p>2</p></div>
           <div class="talla-estante1"><p>S</p></div>
           <div class="talla-estante1"><p>M</p></div>
           <div class="talla-estante1"><p>L</p></div>
-          <div class="talla-estante1"><p>XL</p></div>
         </div>
       </div>
 
       <div class="estado-estante1">
         <div class="valor-estante1"><p>{{estante3?.cantEspaciosLlenos}}/{{estante3?.cantEspaciosTotal}}</p></div>
-        <button class="lupita">
+        <button class="lupita" (click)="funcionRevisar(estante3?.idEstante)">
           <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5746 6.59234C10.5746 8.92704 8.682 10.8197 6.3473 10.8197C4.01261 10.8197 2.11996 8.92704 2.11996 6.59234C2.11996 4.25765 4.01261 2.365 6.3473 2.365C8.682 2.365 10.5746 4.25765 10.5746 6.59234ZM9.31366 11.915C8.43583 12.4053 7.42419 12.6847 6.3473 12.6847C2.98259 12.6847 0.254959 9.95705 0.254959 6.59234C0.254959 3.22763 2.98259 0.5 6.3473 0.5C9.71201 0.5 12.4396 3.22763 12.4396 6.59234C12.4396 7.93376 12.0061 9.17392 11.2715 10.1804L13.3626 12.2714C13.8724 12.7812 13.8724 13.6078 13.3626 14.1176C12.8528 14.6275 12.0262 14.6275 11.5163 14.1176L9.31366 11.915Z" fill="black"/>
           </svg>
@@ -70,16 +70,16 @@
         <p class="titulo-estante1">ESTANTE {{estante2?.idEstante}}</p>
         <p class="subtitulo-estante1">{{estante2?.tipoBien}}</p>
         <div class="tallas-estante1">
-          <div class="talla-estante1"><p>S</p></div>
-          <div class="talla-estante1"><p>M</p></div>
-          <div class="talla-estante1"><p>L</p></div>
-          <div class="talla-estante1"><p>XL</p></div>
+          <div class="talla-estante1"><p>4</p></div>
+          <div class="talla-estante1"><p>6</p></div>
+          <div class="talla-estante1"><p>8</p></div>
+          <div class="talla-estante1"><p>10</p></div>
         </div>
       </div>
 
       <div class="estado-estante1">
         <div class="valor-estante1"><p>{{estante2?.cantEspaciosLlenos}}/{{estante2?.cantEspaciosTotal}}</p></div>
-        <button class="lupita">
+        <button class="lupita" (click)="funcionRevisar(estante2?.idEstante)">
           <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5746 6.59234C10.5746 8.92704 8.682 10.8197 6.3473 10.8197C4.01261 10.8197 2.11996 8.92704 2.11996 6.59234C2.11996 4.25765 4.01261 2.365 6.3473 2.365C8.682 2.365 10.5746 4.25765 10.5746 6.59234ZM9.31366 11.915C8.43583 12.4053 7.42419 12.6847 6.3473 12.6847C2.98259 12.6847 0.254959 9.95705 0.254959 6.59234C0.254959 3.22763 2.98259 0.5 6.3473 0.5C9.71201 0.5 12.4396 3.22763 12.4396 6.59234C12.4396 7.93376 12.0061 9.17392 11.2715 10.1804L13.3626 12.2714C13.8724 12.7812 13.8724 13.6078 13.3626 14.1176C12.8528 14.6275 12.0262 14.6275 11.5163 14.1176L9.31366 11.915Z" fill="black"/>
           </svg>
@@ -93,16 +93,16 @@
         <p class="titulo-estante1">ESTANTE {{estante4?.idEstante}}</p>
         <p class="subtitulo-estante1">{{estante4?.tipoBien}}</p>
         <div class="tallas-estante1">
+          <div class="talla-estante1"><p>2</p></div>
           <div class="talla-estante1"><p>S</p></div>
           <div class="talla-estante1"><p>M</p></div>
           <div class="talla-estante1"><p>L</p></div>
-          <div class="talla-estante1"><p>XL</p></div>
         </div>
       </div>
 
       <div class="estado-estante1">
         <div class="valor-estante1"><p>{{estante4?.cantEspaciosLlenos}}/{{estante4?.cantEspaciosTotal}}</p></div>
-        <button class="lupita">
+        <button class="lupita" (click)="funcionRevisar(estante4?.idEstante)">
           <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5746 6.59234C10.5746 8.92704 8.682 10.8197 6.3473 10.8197C4.01261 10.8197 2.11996 8.92704 2.11996 6.59234C2.11996 4.25765 4.01261 2.365 6.3473 2.365C8.682 2.365 10.5746 4.25765 10.5746 6.59234ZM9.31366 11.915C8.43583 12.4053 7.42419 12.6847 6.3473 12.6847C2.98259 12.6847 0.254959 9.95705 0.254959 6.59234C0.254959 3.22763 2.98259 0.5 6.3473 0.5C9.71201 0.5 12.4396 3.22763 12.4396 6.59234C12.4396 7.93376 12.0061 9.17392 11.2715 10.1804L13.3626 12.2714C13.8724 12.7812 13.8724 13.6078 13.3626 14.1176C12.8528 14.6275 12.0262 14.6275 11.5163 14.1176L9.31366 11.915Z" fill="black"/>
           </svg>

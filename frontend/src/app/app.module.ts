@@ -15,6 +15,7 @@ import { DisponibilidadEstanteComponent } from './disponibilidad-estante/disponi
 import { DisponibilidadEspacioComponent } from './disponibilidad-espacio/disponibilidad-espacio.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { BusquedaBienesComponent } from './busqueda-bienes/busqueda-bienes.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FormsModule } from '@angular/forms';
     RevisionLlegadaSComponent,
     DisponibilidadAlmacenComponent,
     DisponibilidadEstanteComponent,
-    DisponibilidadEspacioComponent
+    DisponibilidadEspacioComponent,
+    BusquedaBienesComponent
   ],
   imports: [
     BrowserModule,
